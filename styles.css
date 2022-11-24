@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --mainColor: #434242;
+    --secondColor: #222222;
+    --offColor: #F3EFE0;
+    --detailColor: #22A39F;
+}
+
+body {
+    background-color: var(--mainColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;    
+}
+
+@media screen and (max-width: 392px) {
+
+    .pic {
+        height: 100px;
+        width: 100px;
+        border-radius: 100px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid var(--detailColor);
+        margin: 2em 0 1em 0;
+        box-shadow: 10px 10px 20px black;
+    }
+
+    .pic img {
+        height: 100%;
+        border-radius: 50px;
+    }
+
+    .infoBox {
+        background-color: var(--secondColor);
+        border: 3px solid var(--detailColor);
+        color: var(--offColor);
+        height: 10em;
+        width: 90%;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 15px;
+        box-shadow: 10px 10px 20px black;
+    }
+
+    .infoBox .socials {
+        font-size: 34px;
+    }
+
+    .infoBox .location {
+        font-size: 10px;
+    }
+
+    .aboutMeArea {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--offColor);
+        margin-top: 3em;
+    }
+}
