@@ -85,6 +85,46 @@ body {
         box-shadow: 10px 10px 20px black;
     }
 
+    .messageBox {
+        position: absolute;
+        top: 2em;
+        background-color: var(--secondColor);
+        border: 3px solid var(--detailColor);
+        color: var(--offColor);
+        height: 80%;
+        width: 90%;
+        border-radius: 15px;
+        padding: 1em;
+    }
+
+    .messageBox i {
+        color: var(--offColor);
+        font-size: 25px;
+        position: relative;
+        left: 10.5em;
+    }
+
+    .messageBox input {
+        margin-top: 2em;
+        background-color: var(--mainColor);
+        border: 3px solid var(--detailColor);
+        color: var(--offColor);
+        padding: 0.5em 1em;
+        border-radius: 15px;
+        width: 20em;
+    }
+
+    .messageBox #msg {
+        height: 9em;
+    }
+
+    .messageBox .optional {
+        position: relative;
+        top: -27em;
+        left: 2em;
+        font-size: 10px;
+    }
+
     footer {
         position: fixed;
         bottom: 1em;
