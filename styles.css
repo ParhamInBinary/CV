@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;    
 }
 
 :root{
@@ -17,11 +18,18 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Poppins', sans-serif;    
 }
 
-@media screen and (max-width: 392px) {
+/* ============= MOBILE VIEW ============= */
+@media screen and (min-width: 360px) {
 
+    /* ============= ABOUT ME ============= */
+    .landingPage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+    }
     .pic {
         height: 100px;
         width: 100px;
@@ -85,7 +93,9 @@ body {
         box-shadow: 10px 10px 20px black;
     }
 
+    /* ============= MESSAGE ME ============= */
     .messageBox {
+        display: none;
         position: absolute;
         top: 2em;
         background-color: var(--secondColor);
@@ -115,7 +125,15 @@ body {
     }
 
     .messageBox #msg {
-        height: 9em;
+        margin-top: 2em;
+        background-color: var(--mainColor);
+        border: 3px solid var(--detailColor);
+        color: var(--offColor);
+        padding: 0.5em 1em;
+        border-radius: 15px;
+        width: 20em;
+        height: 9em;   
+        resize: none; 
     }
 
     .messageBox .optional {
@@ -125,6 +143,18 @@ body {
         font-size: 10px;
     }
 
+
+    /* ============= QUALIFICATIONS ============= */
+    .qualificationsPage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+    }
+
+
+
+    /* ============= FOOTER ============= */
     footer {
         position: fixed;
         bottom: 1em;
