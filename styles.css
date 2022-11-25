@@ -152,7 +152,18 @@ body {
         height: 100vh;
     }
 
-
+    .skills {
+        margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+    }
+    .selected {
+        width: 20em;
+        height: 4em;
+        background-color: var(--secondColor);
+        color: var(--detailColor);
+        border-radius: 15px;
+    }
 
     /* ============= FOOTER ============= */
     footer {
