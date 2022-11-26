@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parham Berenjian  CV</title>
     <link rel="stylesheet" href="./styles.css">
-    <script type="module" src="./main.js"></script>
+    <script defer src="./main.js"></script>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
 </head>
-<body>
+<body onload="main()">
 
     <!-- ============= ABOUT ME ============= -->
     <div class="landingPage">
@@ -56,12 +56,22 @@
 
     <!-- ============= QUALIFICATIONS ============= -->
     <div class="qualificationsPage">
-        <div class="skills">
-            <div class="selected"></div>
-            <div class="frontEnd options">Front end development</div>
-            <div class="backEnd options">Back end development</div>
-            <div class="GaD options">Graphics and design</div>
+
+        <div class="dropdown">
+
+            <div class="selectBox">
+                <span class="selected"><i class="uil uil-brackets-curly"></i> Frontend development</span>
+                <div class="dropIcon"></div>
+            </div>
+
+            <ul class="skillMenu">
+                <li class="active"><i class="uil uil-brackets-curly"></i> Frontend development</li>
+                <li><i class="uil uil-server-network"></i> Backend development</li>
+                <li><i class="uil uil-palette"></i> Graphics & design</li>
+            </ul>
+
         </div>
+
     </div>
 
 
