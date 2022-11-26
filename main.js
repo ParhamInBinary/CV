@@ -11,8 +11,25 @@ function addEventListeners() {
 
     const messageMeXMark = document.querySelector("#messageMeXMark")
     messageMeXMark.addEventListener("click", toggleMessageWindow);
+
+    const body = document.querySelector("body");
+    body.addEventListener("click", collapseDropdown);
 }
 
+function collapseDropdown(e) {
+    const selectBox = document.querySelector(".selectBox");
+    const path = e.path;
+    for ( const element of path ) {
+        if ( element == selectBox) {
+            return
+        }
+    }
+    const skillMenu = document.querySelector(".skillMenu");
+    skillMenu.classList.toggle("skillMenu-open", false);
+
+    const dropIcon = document.querySelector(".dropIcon")
+    dropIcon.classList.toggle("dropIcon-rotate", false);
+}
 
 function toggleMessageWindow() {
     const messageBox = document.querySelector(".messageBox");
