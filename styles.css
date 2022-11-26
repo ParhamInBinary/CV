@@ -152,17 +152,58 @@ body {
         height: 100vh;
     }
 
-    .skills {
+    .dropdown {
         margin-top: 1em;
         display: flex;
         flex-direction: column;
     }
-    .selected {
-        width: 20em;
-        height: 4em;
+    .selectBox {
         background-color: var(--secondColor);
         color: var(--detailColor);
+        padding: 0.5em 1em;
+        width: 20em;
+        height: 3em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         border-radius: 15px;
+    }
+
+    .dropIcon {
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 6px solid var(--detailColor);
+        transition: 0.3s;
+    }
+
+    .dropIcon-rotate {
+        transform: rotate(180deg);
+    }
+
+    .skillMenu {
+        list-style: none;
+        padding: .5em 1em;
+        background-color: rgb(49, 49, 49);
+        border-radius: 15px;
+        box-shadow: 0px 3px 10px black;
+        color: var(--offColor);
+        position: relative;
+        top: .5em;
+        opacity: 1;
+        transition: .2s;
+        z-index: 1;
+        display: none;
+    }
+
+    .skillMenu li {
+        padding: 1em 1em;
+    }
+
+    .skillMenu-open {
+        display: block;
+        opacity: 1;
     }
 
     /* ============= FOOTER ============= */
