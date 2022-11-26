@@ -13,12 +13,17 @@
     --detailColor: #22A39F;
 }
 
+.displayNone {
+    display: none !important;
+}
+
 body {
     background-color: var(--mainColor);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 
 /* ============= MOBILE VIEW ============= */
 @media screen and (min-width: 360px) {
@@ -101,10 +106,11 @@ body {
         background-color: var(--secondColor);
         border: 3px solid var(--detailColor);
         color: var(--offColor);
-        height: 80%;
+        height: 90%;
         width: 90%;
         border-radius: 15px;
         padding: 1em;
+        z-index: 1;
     }
 
     .messageBox i {
@@ -132,15 +138,19 @@ body {
         padding: 0.5em 1em;
         border-radius: 15px;
         width: 20em;
-        height: 9em;   
+        height: 13em;   
         resize: none; 
     }
 
     .messageBox .optional {
         position: relative;
-        top: -27em;
+        top: -33.5em;
         left: 2em;
         font-size: 10px;
+    }
+
+    .show-message-window {
+        display: block;
     }
 
 
@@ -217,6 +227,7 @@ body {
         width: 20em;
         position: absolute;
         top: 53em;
+        box-shadow: 10px 10px 20px black;
     }
 
     .skillResults ul {
@@ -225,9 +236,10 @@ body {
         justify-content: space-evenly;
     }
 
-    .skills-hidden {
-        display: none;
-    }
+
+   /* ============= EXPERIENCE ============= */
+
+
 
     /* ============= FOOTER ============= */
     footer {
