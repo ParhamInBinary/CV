@@ -9,7 +9,7 @@ function addEventListeners() {
     const messageMe = document.querySelector(".messageMeBtn");
     messageMe.addEventListener("click", toggleMessageWindow);
 
-    const messageMeXMark = document.querySelector("#messageMeXMark")
+    const messageMeXMark = document.querySelector("#messageMeXMark");
     messageMeXMark.addEventListener("click", toggleMessageWindow);
 
     const body = document.querySelector("body");
@@ -17,17 +17,25 @@ function addEventListeners() {
 
     const experienceSwitch = document.querySelector(".switch");
     experienceSwitch.addEventListener("click", clickExperienceSwitch);
+
+    const projectItem = document.querySelector(".goTo");
+    projectItem.addEventListener("click", openProjectItem);
 }
+
+function openProjectItem(url) {
+    window.open('https://parhaminbinary.github.io/The-grifters-game/', '_blank').focus();
+}
+
 
 function clickExperienceSwitch () {
     const experienceSwitch = document.querySelector(".switch");
     experienceSwitch.classList.toggle("switchClicked");
 
     const educationalExperience = document.querySelector(".education");
-    educationalExperience.classList.toggle("displayNone")
+    educationalExperience.classList.toggle("displayNone");
 
     const workExperience = document.querySelector(".work");
-    workExperience.classList.toggle("displayFlex")
+    workExperience.classList.toggle("displayFlex");
 }
 
 function collapseDropdown(e) {
@@ -53,7 +61,10 @@ function toggleMessageWindow() {
     footer.classList.toggle("displayNone");
 
     const qualificationsPage = document.querySelector(".qualificationsPage");
-    qualificationsPage.classList.toggle("displayNone")
+    qualificationsPage.classList.toggle("displayNone");
+    
+    const portfolioPage = document.querySelector(".portfolioPage");
+    portfolioPage.classList.toggle("displayNone");
 }
 
 function toggleDropdown() {
