@@ -37,7 +37,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 100vh;
+        padding-bottom: 6em;
     }
     .pic {
         height: 100px;
@@ -163,8 +163,8 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 100vh;
         color: var(--offColor);
+        padding-bottom: 6em;
     }
 
     .dropdown {
@@ -205,7 +205,7 @@ body {
         box-shadow: 0px 3px 10px black;
         color: var(--offColor);
         position: absolute;
-        top: 53.5em;
+        top: 52.5em;
         width: 20em;
         opacity: 0;
         transition: opacity .5s ease-in-out;
@@ -253,13 +253,14 @@ body {
     }
 
     .BtnDiv {
+        height: 1.5em;
         width: 4em;
         background-color: var(--mainColor);
         border-radius: 15px;
+        display: flex;
     }
     .switch{
         width: 70%;
-        height: 100%;
         border-radius: 15px;
         border: 3px solid var(--detailColor);
         background-color: #0deae3;
@@ -269,6 +270,7 @@ body {
         margin-left: 1.5em;
     }
 
+    /* ============= EDUCATION ============= */
     .education {
         display: flex;
         flex-direction: column;
@@ -283,13 +285,15 @@ body {
         font-size: 20px;
     }
 
-    .highSchool, .university, .forHire {
+    .highSchool, .medieinstitutet, .forHire {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 2em;
     }
 
+
+    /* ============= WORK ============= */
     .work {
         display: none;
         flex-direction: column;
@@ -303,6 +307,47 @@ body {
         color: var(--detailColor);
         font-size: 20px;
     }
+
+
+    /* ============= PORTFOLIO ============= */
+    .portfolioPage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        color: var(--offColor);
+    }
+
+    
+    .griftersGame {
+        display: flex;
+        background-color: var(--secondColor);
+        color: var(--offColor);
+        border: 3px solid var(--detailColor);
+        border-radius: 15px;
+        width: 20em;
+        padding: 2em 1em;
+        margin-top: 1em;
+        box-shadow: 10px 10px 20px black;
+    }
+    .griftersGame video {
+        height: 5em;
+    }
+    .projectInfoAndButton{
+        margin-left: 10px;
+    }
+    .projectInfoAndButton .itemInfo{
+        font-size: 11px;
+    }
+    .goTo {
+        background-color: var(--detailColor);
+        border: 1px solid var(--detailColor);
+        color: var(--offColor);
+        padding: .2em 1em;
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+
 
     /* ============= FOOTER ============= */
     footer {
