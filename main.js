@@ -20,12 +20,34 @@ function addEventListeners() {
 
     const projectItem = document.querySelector(".goTo");
     projectItem.addEventListener("click", openProjectItem);
+    
+    const linkedInButton = document.querySelector("#linkedInLink");
+    linkedInButton.addEventListener("click", openLinkedInLink);
+    
+    const gitHubButton = document.querySelector("#gitHubLink");
+    gitHubButton.addEventListener("click", openGitHubLink);
+    
+    const myMailButton = document.querySelector("#emailLink");
+    myMailButton.addEventListener("click", openMyMailWindow);
 }
 
-function openProjectItem(url) {
+
+function openLinkedInLink() {
+    window.open('https://www.linkedin.com/in/parham-berenjian-5a2a26196/', '_blank').focus();
+}
+
+function openGitHubLink() {
+    window.open('https://github.com/ParhamInBinary', '_blank').focus();
+}
+
+function openProjectItem() {
     window.open('https://parhaminbinary.github.io/The-grifters-game/', '_blank').focus();
 }
 
+function openMyMailWindow() {
+    const myMailWindow = document.querySelector(".myMailWindow");
+    myMailWindow.classList.toggle("displayFlex");
+}
 
 function clickExperienceSwitch () {
     const experienceSwitch = document.querySelector(".switch");
