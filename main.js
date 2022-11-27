@@ -14,6 +14,20 @@ function addEventListeners() {
 
     const body = document.querySelector("body");
     body.addEventListener("click", collapseDropdown);
+
+    const experienceSwitch = document.querySelector(".switch");
+    experienceSwitch.addEventListener("click", clickExperienceSwitch);
+}
+
+function clickExperienceSwitch () {
+    const experienceSwitch = document.querySelector(".switch");
+    experienceSwitch.classList.toggle("switchClicked");
+
+    const educationalExperience = document.querySelector(".education");
+    educationalExperience.classList.toggle("displayNone")
+
+    const workExperience = document.querySelector(".work");
+    workExperience.classList.toggle("displayFlex")
 }
 
 function collapseDropdown(e) {
@@ -37,6 +51,9 @@ function toggleMessageWindow() {
     
     const footer = document.querySelector("footer");
     footer.classList.toggle("displayNone");
+
+    const qualificationsPage = document.querySelector(".qualificationsPage");
+    qualificationsPage.classList.toggle("displayNone")
 }
 
 function toggleDropdown() {
