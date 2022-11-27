@@ -40,19 +40,20 @@
                 <button class="downloadCVBtn">Download CV <i class="uil uil-download-alt"></i></button>
             </div>
         </div>
+        <!-- ============= MESSAGE ME ============= -->
+        <div class="messageBox">
+            <i id="messageMeXMark" class="uil uil-times"></i>
+            <h1>Hello!</h1>
+            <p>Please write your message below and I will respond ASAP. <br> Thank you!</p>
+            <input type="text" placeholder="Name" id="name" required>
+            <input type="text" placeholder="Company">
+            <input type="email" placeholder="Email" id="email" required>
+            <textarea name="msg" id="msg" placeholder="Write your message here..." required></textarea>
+            <input type="submit" value="Send">
+            <p class="optional">*Optional</p>
+        </div>
+
     </div>    
-    <!-- ============= MESSAGE ME ============= -->
-    <div class="messageBox">
-        <i id="messageMeXMark" class="uil uil-times"></i>
-        <h1>Hello!</h1>
-        <p>Please write your message below and I will respond ASAP. <br> Thank you!</p>
-        <input type="text" placeholder="Name" id="name" required>
-        <input type="text" placeholder="Company">
-        <input type="email" placeholder="Email" id="email" required>
-        <textarea name="msg" id="msg" placeholder="Write your message here..." required></textarea>
-        <input type="submit" value="Send">
-        <p class="optional">*Optional</p>
-    </div>
 
     <!-- ============= QUALIFICATIONS ============= -->
     <div class="qualificationsPage">
@@ -86,20 +87,51 @@
                 <li>Figma</li>
             </ul>
         </div>
-    </div>
+        
+        <!-- ============= EXPERIENCE ============= -->
+        <div class="experience">
+            <div class="BtnDiv">
+                <button class="switch"></button>
+            </div>
 
-    <!-- ============= EXPERIENCE ============= -->
-    <div class="experience">
-        <div class="education"></div>
-        <div class="work"></div>
-    </div>
+            <div class="education">
 
+                <i class="uil uil-university"></i>
+                <span><u>Education</u></span>
+
+                <div class="highSchool">
+                    <p>High school:</p>
+                    <p>2010-2013</p>
+                    <p>IT major</p>
+                </div>
+
+                <div class="university">
+                    <p>University:</p>
+                    <p>2022-Ongoing</p>
+                    <p>Frontend development</p>
+                </div>
+                
+            </div>
+            
+            <div class="work">
+
+                <i class="uil uil-briefcase-alt"></i>
+                <span><u>Work</u></span>
+
+                <div class="forHire">
+                    <p>Be the first to hire me in this field!</p>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
 
     <!-- ============= FOOTER ============= -->
     <footer>
         <button class="home"><i class="uil uil-user"></i></button>
         <button class="qualifications"><i class="uil uil-graduation-cap"></i></button>
-        <button class="portfolio"><i class="uil uil-briefcase-alt"></i></button>
+        <button class="portfolio"><i class="uil uil-images"></i></button>
         <button class="contact"><i class="uil uil-at"></i></button>
     </footer>
 </body>
