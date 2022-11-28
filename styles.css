@@ -172,13 +172,6 @@ body {
         resize: none; 
     }
 
-    .messageBox .optional {
-        position: relative;
-        top: -33.5em;
-        left: 2em;
-        font-size: 10px;
-    }
-
     .show-message-window {
         display: block;
     }
@@ -278,6 +271,28 @@ body {
         border-radius: 5px;
     }
 
+    .switchContainer {
+        display: flex;
+    }
+
+    .eduIcon {
+        color: var(--detailColor);
+        margin-right: 1em;
+        transition: color .2s;
+    }
+    .eduIconColorSwitch {
+        color: var(--offColor);
+    }
+    
+    .workIcon {
+        color: var(--offColor);
+        margin-left: 1em;
+        transition: color .2s;
+    }
+    .workIconColorSwitch {
+        color: var(--detailColor);
+    }
+
     .BtnDiv {
         height: 1.5em;
         width: 4em;
@@ -290,6 +305,7 @@ body {
         border-radius: 15px;
         border: 3px solid var(--detailColor);
         background-color: #0deae3;
+        position: relative;
         transition: margin-left .2s;
     }
     .switchClicked {
