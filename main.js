@@ -13,7 +13,10 @@ function addEventListeners() {
     messageMeXMark.addEventListener("click", toggleMessageWindow);
 
     const body = document.querySelector("body");
-    body.addEventListener("click", collapseDropdown);
+    body.addEventListener("click", (e) => {
+        collapseDropdown(e);
+        collapseMyMailWindow(e);
+    });
 
     const experienceSwitch = document.querySelector(".switch");
     experienceSwitch.addEventListener("click", clickExperienceSwitch);
@@ -73,6 +76,18 @@ function collapseDropdown(e) {
 
     const dropIcon = document.querySelector(".dropIcon")
     dropIcon.classList.toggle("dropIcon-rotate", false);
+}
+
+function collapseMyMailWindow(e) {
+    const emailLink = document.querySelector("#emailLink");
+    const path = e.path;
+    for ( const element of path ) {
+        if ( element == emailLink ) {
+            return
+        }
+    }
+    const myMailWindow = document.querySelector(".myMailWindow");
+    myMailWindow.classList.toggle("displayFlex", false);
 }
 
 function toggleMessageWindow() {
