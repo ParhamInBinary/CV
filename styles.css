@@ -47,7 +47,7 @@ body {
         height: 100px;
         width: 100px;
         border-radius: 100px;
-        background-color: white;
+        background-color: rgb(206, 206, 206);
         display: flex;
         justify-content: center;
         align-items: center;
