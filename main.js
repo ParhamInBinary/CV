@@ -61,6 +61,12 @@ function clickExperienceSwitch () {
 
     const workExperience = document.querySelector(".work");
     workExperience.classList.toggle("displayFlex");
+
+    const eduIcon = document.querySelector(".eduIcon");
+    eduIcon.classList.toggle("eduIconColorSwitch");
+    
+    const workIcon = document.querySelector(".workIcon");
+    workIcon.classList.toggle("workIconColorSwitch");
 }
 
 function collapseDropdown(e) {
