@@ -30,8 +30,8 @@ function addEventListeners() {
     const gitHubButton = document.querySelector("#gitHubLink");
     gitHubButton.addEventListener("click", openGitHubLink);
     
-    const myMailButton = document.querySelector("#emailLink");
-    myMailButton.addEventListener("click", openMyMailWindow);
+    const myMailIcon = document.querySelector("#emailIcon");
+    myMailIcon.addEventListener("click", openMyMailWindow);
 }
 
 
@@ -85,14 +85,14 @@ function collapseDropdown(e) {
 }
 
 function collapseMyMailWindow(e) {
-    const emailLink = document.querySelector("#emailLink");
+    const myMailIcon = document.querySelector("#emailIcon");
+    const myMailWindow = document.querySelector(".myMailWindow");
     const path = e.path;
     for ( const element of path ) {
-        if ( element == emailLink ) {
+        if ( element == myMailIcon || element == myMailWindow ) {
             return
         }
     }
-    const myMailWindow = document.querySelector(".myMailWindow");
     myMailWindow.classList.toggle("displayFlex", false);
 }
 
