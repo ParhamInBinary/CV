@@ -51,8 +51,8 @@ html {
         justify-content: flex-end;
         align-items: center;
         gap: 6%;
-        padding-right: 8%;
         z-index: 100;
+        padding-right: 1%;
     }
     header a {
         text-decoration: none;
@@ -69,7 +69,7 @@ html {
         background-color: #0deae3;
         font-size: 30px;
         color: var(--detailColor);
-        padding: 0 1em;
+        padding: 0 .5em;
     
     }
 
@@ -82,6 +82,9 @@ html {
     /* ============= ABOUT ME ============= */
     .landingPage {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         width: 100%;
         padding-bottom: 6em;
         height: 100vh;
@@ -95,8 +98,8 @@ html {
         justify-content: center;
         align-items: center;
         border: 3px solid var(--detailColor);
-        margin: 2em 0 1em 0;
         box-shadow: 10px 10px 20px black;
+        margin-left: -40%;
     }
 
     .pic img {
@@ -108,14 +111,16 @@ html {
         background-color: var(--secondColor);
         border: 3px solid var(--detailColor);
         color: var(--offColor);
-        height: 10em;
-        width: 21em;
+        height: 30%;
+        width: 40%;
         padding: 1em;
         display: flex;
         flex-direction: column;
         align-items: center;
         border-radius: 15px;
         box-shadow: 10px 10px 20px black;
+        margin: -16.5% -20% 0 0;
+        font-size: 30px;
     }
 
     .infoBox .socials i{
@@ -129,11 +134,11 @@ html {
         background-color: var(--secondColor);
         border: 3px solid var(--detailColor);
         border-radius: 15px;
-        width: 16em;
+        width: 17%;
         display: none;
         text-align: center;
         position: absolute;
-        right: 3em;
+        right: 32%;
         padding: 1em;
     }
 
@@ -151,7 +156,7 @@ html {
     }
 
     .aboutMeArea {
-        width: 20em;
+        width: 50%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -167,7 +172,7 @@ html {
         height: 4em;
         width: 11em;
         border-radius: 15px;
-        margin-top: 2em;
+        margin: 2em;
         box-shadow: 10px 10px 20px black;
     }
 
