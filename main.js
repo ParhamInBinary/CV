@@ -1,7 +1,14 @@
+/**
+ * Main function wihch is onloaded on the body tag in the HTML-file.
+ */
 function main() {
     addEventListeners();
 }
 
+
+/**
+ * Every eventListener thoughtout the script.
+ */
 function addEventListeners() {
     const selectBox = document.querySelector(".selectBox");
     selectBox.addEventListener("click", toggleDropdown);
@@ -34,24 +41,42 @@ function addEventListeners() {
     myMailIcon.addEventListener("click", openMyMailWindow);
 }
 
-
+/**
+ * Function to open the link in a new tab.
+ */
 function openLinkedInLink() {
     window.open('https://www.linkedin.com/in/parham-berenjian-5a2a26196/', '_blank').focus();
 }
 
+
+/**
+ * Function to open the link in a new tab.
+ */
 function openGitHubLink() {
     window.open('https://github.com/ParhamInBinary', '_blank').focus();
 }
 
+
+/**
+ * Function to open the link in a new tab.
+ */
 function openProjectItem() {
     window.open('https://parhaminbinary.github.io/The-grifters-game/', '_blank').focus();
 }
 
+
+/**
+ * Function to display a div presenting an email address.
+ */
 function openMyMailWindow() {
     const myMailWindow = document.querySelector(".myMailWindow");
     myMailWindow.classList.toggle("displayFlex");
 }
 
+
+/**
+ * Function to switch between two layouts on demand.
+ */
 function clickExperienceSwitch () {
     const experienceSwitch = document.querySelector(".switch");
     experienceSwitch.classList.toggle("switchClicked");
@@ -69,6 +94,11 @@ function clickExperienceSwitch () {
     workIcon.classList.toggle("workIconColorSwitch");
 }
 
+/**
+ * A function to collapse a dropdown by clicking anywhere on the body.
+ * @param { MouseEvent<HTMLDivElement> } e click event.
+ * @returns { void }
+ */
 function collapseDropdown(e) {
     const selectBox = document.querySelector(".selectBox");
     const path = e.path;
@@ -84,6 +114,11 @@ function collapseDropdown(e) {
     dropIcon.classList.toggle("dropIcon-rotate", false);
 }
 
+/**
+ * A function to hide a div by clicking anywhere on the body.
+ * @param { MouseEvent<HTMLDivElement> } e click event.
+ * @returns { void }
+ */
 function collapseMyMailWindow(e) {
     const myMailIcon = document.querySelector("#emailIcon");
     const myMailWindow = document.querySelector(".myMailWindow");
@@ -96,6 +131,10 @@ function collapseMyMailWindow(e) {
     myMailWindow.classList.toggle("displayFlex", false);
 }
 
+
+/**
+ * A function to display a contact form in a div.
+ */
 function toggleMessageWindow() {
     const messageBox = document.querySelector(".messageBox");
     messageBox.classList.toggle("show-message-window");
@@ -110,6 +149,10 @@ function toggleMessageWindow() {
     portfolioPage.classList.toggle("displayNone");
 }
 
+
+/**
+ * A function to display a dropdown.
+ */
 function toggleDropdown() {
     const skillMenu = document.querySelector(".skillMenu");
     skillMenu.classList.toggle("skillMenu-open");
@@ -123,6 +166,10 @@ for (let i = 0; i < options.length; i++) {
     options[i].addEventListener("click", selectOption);
 }
 
+/**
+ * A function to select the chosen element to be presented in the div taking the previous' stead then closing the dropdown.
+ * @param { MouseEvent<HTMLDivElement> } e click event.
+ */
 function selectOption(e) {
     const selected = document.querySelector(".selected");
     const selectedText = e.target.innerText;
@@ -134,6 +181,10 @@ function selectOption(e) {
     updateSkillResults();
 }
 
+
+/**
+ * A function to present information depending on which element was chosen in the dropdown.
+ */
 function updateSkillResults() {
     const selectedSkill = document.querySelector(".selected").innerText.trim();
     const GraphicsAndDesignsResults = document.querySelector(".GraphicsAndDesigns");
