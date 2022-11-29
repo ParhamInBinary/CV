@@ -161,10 +161,14 @@ function toggleDropdown() {
     dropIcon.classList.toggle("dropIcon-rotate");
 }
 
+/**
+ * A variable and a loop for running though an array of options in a dropdown to be clicked.
+ */
 const options = document.querySelectorAll("li");
 for (let i = 0; i < options.length; i++) {
     options[i].addEventListener("click", selectOption);
 }
+
 
 /**
  * A function to select the chosen element to be presented in the div taking the previous' stead then closing the dropdown.
