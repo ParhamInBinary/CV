@@ -1,0 +1,398 @@
+/* ============= MOBILE VIEW ============= */
+@media screen and (max-width: 768px) {
+
+    header {
+        display: none;
+    }
+    body {
+        background-color: var(--mainColor);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* ============= ABOUT ME ============= */
+    .landingPage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 6em;
+    }
+    .pic {
+        height: 100px;
+        width: 100px;
+        border-radius: 100px;
+        background-color: rgb(206, 206, 206);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid var(--detailColor);
+        margin: 2em 0 1em 0;
+        box-shadow: 10px 10px 20px black;
+    }
+
+    .pic img {
+        height: 100%;
+        border-radius: 50px;
+    }
+
+    .infoBox {
+        background-color: var(--secondColor);
+        border: 3px solid var(--detailColor);
+        color: var(--offColor);
+        height: 10em;
+        width: 21em;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 15px;
+        box-shadow: 10px 10px 20px black;
+    }
+
+    .infoBox .socials i{
+        font-size: 34px;
+        text-decoration: none;
+        color: var(--offColor);
+        padding: 0 .2em;
+    }
+
+    .myMailWindow {
+        background-color: var(--secondColor);
+        border: 3px solid var(--detailColor);
+        border-radius: 15px;
+        width: 16em;
+        display: none;
+        text-align: center;
+        position: absolute;
+        left: 25%;
+        padding: 1em;
+    }
+
+    .myMailWindow input {
+        width: 16em;
+        background-color: var(--mainColor);
+        color: var(--offColor);
+        border: none;
+        border-radius: 5px;
+        padding: 4px;
+    }
+
+    .infoBox .location {
+        font-size: 10px;
+    }
+
+    .aboutMeArea {
+        width: 20em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: var(--offColor);
+        margin-top: 3em;
+    }
+
+    .aboutMeArea button {
+        background-color: var(--secondColor);
+        color: var(--offColor);
+        border: 3px solid var(--detailColor);
+        height: 4em;
+        width: 11em;
+        border-radius: 15px;
+        margin-top: 2em;
+        box-shadow: 10px 10px 20px black;
+    }
+
+    /* ============= MESSAGE ME ============= */
+    .messageBox {
+        display: none;
+        position: absolute;
+        top: 2em;
+        background-color: var(--secondColor);
+        border: 3px solid var(--detailColor);
+        color: var(--offColor);
+        height: 90%;
+        width: 90%;
+        border-radius: 15px;
+        padding: 1em;
+        z-index: 1;
+        text-align: center;
+    }
+
+    .messageBox i {
+        color: var(--offColor);
+        font-size: 25px;
+        position: relative;
+        left: 45%;
+    }
+
+    .messageBox input {
+        margin-top: 2em;
+        background-color: var(--mainColor);
+        border: 3px solid var(--detailColor);
+        color: var(--offColor);
+        padding: 0.5em 1em;
+        border-radius: 15px;
+        width: 20em;
+    }
+
+    .messageBox #msg {
+        margin-top: 2em;
+        background-color: var(--mainColor);
+        border: 3px solid var(--detailColor);
+        color: var(--offColor);
+        padding: 0.5em 1em;
+        border-radius: 15px;
+        width: 20em;
+        height: 13em;   
+        resize: none; 
+    }
+
+    .show-message-window {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    /* ============= QUALIFICATIONS ============= */
+    .qualificationsPage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--offColor);
+        padding-bottom: 6em;
+    }
+
+    .dropdown {
+        margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+    }
+    .selectBox {
+        background-color: var(--secondColor);
+        color: var(--detailColor);
+        padding: 0.5em 1em;
+        width: 20em;
+        height: 3em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 15px;
+    }
+
+    .dropIcon {
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 6px solid var(--detailColor);
+        transition: 0.2s;
+    }
+
+    .dropIcon-rotate {
+        transform: rotate(180deg);
+    }
+
+    .skillMenu {
+        list-style: none;
+        padding: .5em 1em;
+        background-color: rgb(49, 49, 49);
+        border-radius: 15px;
+        box-shadow: 0px 3px 10px black;
+        color: var(--offColor);
+        position: absolute;
+        top: 52.5em;
+        width: 20em;
+        opacity: 0;
+        transition: opacity .5s ease-in-out;
+        z-index: 1;
+        display: none;
+    }
+
+    .skillMenu li {
+        padding: 1em 1em;
+    }
+
+    .skillMenu-open {
+        display: block;
+        opacity: 1;
+    }
+
+    .skillResults {
+        background-color: var(--secondColor);
+        color: var(--offColor);
+        border: 3px solid var(--detailColor);
+        margin-top: 1em;
+        padding: 1em;
+        border-radius: 15px;
+        width: 20em;
+        box-shadow: 10px 10px 20px black;
+    }
+
+    .skillResults ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+
+   /* ============= EXPERIENCE ============= */
+    .experience {
+        background-color: var(--secondColor);
+        margin-top: 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 20em;
+        padding: 1em;
+        border-radius: 5px;
+    }
+
+    .switchContainer {
+        display: flex;
+    }
+
+    .eduIcon {
+        color: var(--detailColor);
+        margin-right: 1em;
+        transition: color .2s;
+    }
+    .eduIconColorSwitch {
+        color: var(--offColor);
+    }
+    
+    .workIcon {
+        color: var(--offColor);
+        margin-left: 1em;
+        transition: color .2s;
+    }
+    .workIconColorSwitch {
+        color: var(--detailColor);
+    }
+
+    .BtnDiv {
+        height: 1.5em;
+        width: 4em;
+        background-color: var(--mainColor);
+        border-radius: 15px;
+        display: flex;
+    }
+    .switch{
+        width: 70%;
+        border-radius: 15px;
+        border: 3px solid var(--detailColor);
+        background-color: #0deae3;
+        position: relative;
+        transition: margin-left .2s;
+    }
+    .switchClicked {
+        margin-left: 1.5em;
+    }
+
+    /* ============= EDUCATION ============= */
+    .education {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1em;
+    }
+    .education i {
+        font-size: 70px;
+    }
+    .education span {
+        color: var(--detailColor);
+        font-size: 20px;
+    }
+
+    .highSchool, .medieinstitutet, .forHire {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2em;
+    }
+
+
+    /* ============= WORK ============= */
+    .work {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1em;
+    }
+    .work i {
+        font-size: 70px;
+    }
+    .work span {
+        color: var(--detailColor);
+        font-size: 20px;
+    }
+
+
+    /* ============= PORTFOLIO ============= */
+    .portfolioPage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--offColor);
+        padding-bottom: 7em;
+    }
+
+    
+    .griftersGame {
+        display: flex;
+        background-color: var(--secondColor);
+        color: var(--offColor);
+        border: 3px solid var(--detailColor);
+        border-radius: 15px;
+        width: 20em;
+        padding: 2em 1em;
+        margin-top: 1em;
+        box-shadow: 10px 10px 20px black;
+    }
+    .griftersGame video {
+        height: 5em;
+    }
+    .projectInfoAndButton{
+        margin-left: 10px;
+    }
+    .projectInfoAndButton .itemInfo{
+        font-size: 11px;
+    }
+    .goTo {
+        background-color: var(--detailColor);
+        border: 1px solid var(--detailColor);
+        color: var(--offColor);
+        padding: .2em 1em;
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+
+
+    /* ============= FOOTER ============= */
+    footer {
+        position: fixed;
+        bottom: 1em;
+        background-color: #13d4cd;
+        height: 5em;
+        width: 90%;
+        border-radius: 50px;
+        box-shadow: 5px 5px 20px black;
+        border: 3px solid var(--detailColor);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 1001;
+    }
+
+    footer button {
+        height: 50px;
+        width: 50px;
+        border-radius: 50px;
+        border: 3px solid var(--detailColor);
+        background-color: #0deae3;
+        font-size: 30px;
+        color: var(--detailColor);
+    }
+}
