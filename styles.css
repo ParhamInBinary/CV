@@ -129,16 +129,16 @@ html {
         background-color: var(--secondColor);
         border: 3px solid var(--detailColor);
         border-radius: 15px;
-        width: 16em;
         display: none;
         text-align: center;
         position: absolute;
-        left: 41%;
+        left: 50%;
+        transform: translateX(-41%);
         padding: 1em;
     }
 
     .myMailWindow input {
-        width: 100%;
+        width: 16em;
         background-color: var(--mainColor);
         color: var(--offColor);
         border: none;
@@ -180,10 +180,8 @@ html {
         background-color: var(--secondColor);
         border: 3px solid var(--detailColor);
         color: var(--offColor);
-        height: 70%;
-        width: 35em;
         border-radius: 15px;
-        padding: 1em;
+        padding: 3em;
         z-index: 1;
         text-align: center;
     }
@@ -193,7 +191,7 @@ html {
         font-size: 25px;
         position: relative;
         left: 10em;
-
+        bottom: 1em;
     }
 
     .messageBox input {
