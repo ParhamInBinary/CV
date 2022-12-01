@@ -40,7 +40,6 @@
         background-color: var(--secondColor);
         border: 3px solid var(--detailColor);
         color: var(--offColor);
-        height: 10em;
         padding: 1em;
         display: flex;
         flex-direction: column;
