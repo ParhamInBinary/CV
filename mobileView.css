@@ -111,7 +111,7 @@
         border: 3px solid var(--detailColor);
         color: var(--offColor);
         border-radius: 15px;
-        padding: 2em .5em;
+        padding: 2em 1em;
         z-index: 1;
         text-align: center;
     }
