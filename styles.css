@@ -176,7 +176,7 @@ html {
     .messageBox {
         display: none;
         position: absolute;
-        top: 16em;
+        top: 10em;
         background-color: var(--secondColor);
         border: 3px solid var(--detailColor);
         color: var(--offColor);
