@@ -62,7 +62,8 @@
         display: none;
         text-align: center;
         position: absolute;
-        left: 25%;
+        left: 50%;
+        transform: translateX(-50%);
         padding: 1em;
     }
 
@@ -73,6 +74,7 @@
         border: none;
         border-radius: 5px;
         padding: 4px;
+        text-align: center;
     }
 
     .infoBox .location {
@@ -104,14 +106,12 @@
     .messageBox {
         display: none;
         position: absolute;
-        top: 2em;
+        top: 15%;
         background-color: var(--secondColor);
         border: 3px solid var(--detailColor);
         color: var(--offColor);
-        height: 90%;
-        width: 90%;
         border-radius: 15px;
-        padding: 1em;
+        padding: 2em .5em;
         z-index: 1;
         text-align: center;
     }
