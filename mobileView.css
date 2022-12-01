@@ -60,7 +60,6 @@
         background-color: var(--secondColor);
         border: 3px solid var(--detailColor);
         border-radius: 15px;
-        width: 16em;
         display: none;
         text-align: center;
         position: absolute;
