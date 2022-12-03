@@ -28,9 +28,12 @@ function addEventListeners() {
     const experienceSwitch = document.querySelector(".switch");
     experienceSwitch.addEventListener("click", clickExperienceSwitch);
 
-    const projectItem = document.querySelector(".goTo");
-    projectItem.addEventListener("click", openProjectItem);
+    const projectItemGrifter = document.querySelector(".goToGrifter");
+    projectItemGrifter.addEventListener("click", openProjectItemGrifter);
     
+    const projectItemEtch = document.querySelector(".goToEtch");
+    projectItemEtch.addEventListener("click", openProjectItemEtch);
+
     const linkedInButton = document.querySelector("#linkedInLink");
     linkedInButton.addEventListener("click", openLinkedInLink);
     
@@ -60,8 +63,16 @@ function openGitHubLink() {
 /**
  * Function to open the link in a new tab.
  */
-function openProjectItem() {
+function openProjectItemGrifter() {
     window.open('https://parhaminbinary.github.io/The-grifters-game/', '_blank').focus();
+}
+
+
+/**
+ * Function to open the link in a new tab.
+ */
+function openProjectItemEtch() {
+    window.open('https://parhaminbinary.github.io/Etch-N-Sketch/', '_blank').focus();
 }
 
 
