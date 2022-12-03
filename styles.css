@@ -415,18 +415,19 @@ html {
         
     }
 
-    .griftersGame {
+    .portItem {
         display: flex;
         background-color: var(--secondColor);
         color: var(--offColor);
         border: 3px solid var(--detailColor);
         border-radius: 15px;
-        width: 20em;
+        width: ;
+        margin: 1em;
         padding: 2em 1em;
         margin-top: 1em;
         box-shadow: 10px 10px 20px black;
     }
-    .griftersGame video {
+    .portItem video {
         height: 5em;
     }
     .projectInfoAndButton{
@@ -435,7 +436,15 @@ html {
     .projectInfoAndButton .itemInfo{
         font-size: 11px;
     }
-    .goTo {
+    .goToGrifter {
+        background-color: var(--detailColor);
+        border: 1px solid var(--detailColor);
+        color: var(--offColor);
+        padding: .2em 1em;
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+    .goToEtch {
         background-color: var(--detailColor);
         border: 1px solid var(--detailColor);
         color: var(--offColor);
